@@ -6,6 +6,7 @@ const geocode = require('./ultils/geocode')
 const forecast = require('./ultils/forecast')
 // npm init -y, npm i express@4.17.1, npm install hbs@4.1.2, npm i request@2.88.2
 // nodemon source/app.js -e js,hbs
+// npm run dev
 const app = express()
 const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')   // This is known to work
