@@ -25,7 +25,13 @@ weatherForm.addEventListener('submit', (e) =>
                   else
                   {
 //                     messageOne.textContent = 'Fartknocker'
-                     messageOne.textContent = data.Forecast.Temp_F
+                     messageOne.textContent =   'The temperature is '
+                                              + data.Forecast.Temp_F
+                                              + 'F.  The wind is blowing at '
+                                              + data.Forecast.WindSpeed
+                                              + ' mph at '
+                                              + data.Forecast.WindAngle
+                                              + ' degrees.'
                      // messageOne.textContent = data.Address
                      messageTwo.textContent = data.Forecast.ChanceOfPrecip
                   }

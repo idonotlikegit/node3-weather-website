@@ -26,7 +26,9 @@ const forecast = (Latitude, Longitude, CallbackFunction) =>
 //                  Temp_F: response.body.current.temperature,
                   Temp_F: body.current.temperature,
 //                  ChanceOfPrecip: response.body.current.precip
-                  ChanceOfPrecip: body.current.precip
+                  ChanceOfPrecip: body.current.precip,
+                  WindSpeed: body.current.wind_speed,
+                  WindAngle: body.current.wind_degree
                }
             )
          }
