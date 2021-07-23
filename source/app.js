@@ -7,6 +7,7 @@ const forecast = require('./ultils/forecast')
 // npm init -y, npm i express@4.17.1, npm install hbs@4.1.2, npm i request@2.88.2
 // nodemon src/app.js -e js,hbs
 const app = express()
+const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')   // This is known to work
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -165,9 +166,9 @@ app.get('*', (req, res) =>
                 )
    }
 )
-app.listen(3000, () =>
+app.listen(port, () =>
    {
-      console.log('Server is up and listening on port 3000')      
+      console.log('Server is up and listening on port ' + port)
    }
 )
 //console.log(__dirname)
